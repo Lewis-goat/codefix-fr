@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le détartrage, enfin expliqué</title>
+<meta name="description" content="Le calcaire et les thermoblocs, pourquoi le vinaigre abîme certaines machines, citrique ou lactique, et la bonne fréquence de détartrage selon l'eau.">
+<link rel="canonical" href="https://fr.codefixcoffee.com/blog/descaling-science/">
+<link rel="alternate" hreflang="en" href="https://blog.codefixcoffee.com/post/descaling-science/" />
+  <link rel="alternate" hreflang="fr" href="https://fr.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="de" href="https://de.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="es" href="https://es.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="it" href="https://it.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="pl" href="https://pl.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="nl" href="https://nl.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="pt" href="https://pt.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="hu" href="https://hu.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="cs" href="https://cs.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="ro" href="https://ro.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="sv" href="https://sv.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="tr" href="https://tr.codefixcoffee.com/blog/descaling-science/" />
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="CodeFix Blog" href="/blog/rss.xml">
+<meta name="google-adsense-account" content="ca-pub-9660119725457689"><script>(function(){var u="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9660119725457689";var d=false;function l(){if(d)return;d=true;var s=document.createElement("script");s.async=true;s.crossOrigin="anonymous";s.src=u;document.head.appendChild(s)}["scroll","pointerdown","keydown","touchstart"].forEach(function(e){addEventListener(e,l,{once:true,passive:true})});addEventListener("load",function(){setTimeout(l,3500)})})();</script></head>
+<body>
+<header class="site"><div class="in"><a class="brand" href="/blog/">☕ CodeFix Blog</a><span><a href="/">Retour au site</a></span></div></header>
+<main>
+<h1>Le détartrage, enfin expliqué</h1>
+<p class="meta">2026-10-27</p>
+<p>Dans toute liste de pannes de machine à café, une cause racine domine toutes les autres : le calcaire. L'eau dure transporte du calcium et du magnésium dissous ; chauffez-la, et les carbonates précipitent pour se déposer sur le métal le plus chaud de la machine. Le tartre n'est que cela, et il se cache derrière une part démesurée des codes de ce site — pannes de chauffe, pannes de vanne, échecs d'amorçage et voyants de détartrage bloqués. C'est aussi la seule famille de pannes qui se règle pour 10 €.</p>
+<h2>Ce que le tartre fait à un thermobloc</h2>
+<p>Un thermobloc est une masse de métal parcourue d'un canal étroit où l'eau se chauffe en route vers la tasse. Le tartre se plaque sur les parois de ce canal, et le carbonate de calcium est un assez bon isolant thermique — c'est précisément là le problème.</p>
+<ul>
+<li><strong>La chauffe ralentit.</strong> La résistance chauffante met plus de temps à atteindre la température cible, et un dépôt lourd peut freiner la montée au point de faire échouer les contrôles de température de la carte — la famille d'erreurs thermobloc de Jura relie explicitement le tartre à ces codes.</li>
+<li><strong>La sonde se met à mentir.</strong> Une couche de tartre modifie la vitesse à laquelle la sonde de température du bloc perçoit la chaleur : la carte peut croire la machine en surchauffe, ou incapable de chauffer, sans qu'aucun des deux soit vrai.</li>
+<li><strong>Le bloc fonctionne trop chaud.</strong> Un métal isolé thermiquement monte au-dessus de sa température de conception, ce qui met à rude épreuve les fusibles thermiques chargés de le protéger. Un thermobloc entarté à bloc se remplace, il ne se nettoie plus : comptez 90 à 180 € sur une Jura, pour un tartre qu'une bouteille de détartrant aurait dissous.</li>
+</ul>
+<h2>Ce que le tartre fait aux vannes et aux petits orifices</h2>
+<p>Le second terrain de dégâts, c'est tout ce qui est étroit. Sur les machines Jura à vanne céramique motorisée, le tartre rigidifie le disque jusqu'à l'empêcher d'atteindre la position commandée par la carte — c'est très exactement ce que rapporte l'<a href="https://fr.codefixcoffee.com/jura/automatic-machines/error-6/">erreur 6</a>, et pourquoi un détartrage complet constitue la première étape, gratuite, de sa résolution. Les entrées étroites se bouchent de la même façon : l'<a href="https://fr.codefixcoffee.com/philips-saeco/espresso-machines/error-05/">erreur 05 Philips</a> peut survivre à l'amorçage parce qu'une prise d'eau entartée n'autorise plus la pompe à aspirer le moindre filet. Les capteurs de niveau y ont droit aussi — du tartre sur un flotteur de réservoir explique classiquement un faux message « réservoir vide » sur un réservoir plein. Et un débitmètre entarté ne compte plus, l'une des façons dont un <a href="https://fr.codefixcoffee.com/delonghi/magnifica-dinamica/descale-light-stays-on-after-descaling/">voyant De'Longhi reste allumé après le détartrage</a> : la machine n'a jamais enregistré le cycle que vous avez lancé.</p>
+<h2>Pourquoi le vinaigre nuit à certaines machines</h2>
+<p>Le vinaigre ménager est de l'acide acétique, et pour une machine à espresso il cumule trois défauts. Il est faible : il faut un long contact pour ramollir un tartre compacté dans un canal exigu. Il attaque les raccords en laiton chromé et gonfle certains joints caoutchouc. Et son odeur survit à de nombreux rinçages dans les tubulures plastiques. <a href="https://www.nespresso.com/">Nespresso</a> est explicite sur la conséquence — ne détarrez pas au vinaigre, cela endommage le circuit et fait sauter l'assistance — un rappel utile quand un <a href="https://fr.codefixcoffee.com/nespresso/vertuo-machines/blinking-lights/">clignotement orange de Vertuo</a> vous envoie vers la routine de détartrage. Une bouilloire ? Le vinaigre convient. Une machine avec pompe, vanne et garantie ? Passez à un détartrant dédié, comme les <a href="https://www.delonghi.com/">produits d'entretien De'Longhi</a> le préconisent.</p>
+<h2>Acide citrique ou acide lactique</h2>
+<p>Presque tous les détartrants du commerce reposent sur l'un de ces deux acides alimentaires :</p>
+<ul>
+<li><strong>Acide citrique</strong> — vendu en poudre, 3 à 6 € pour de quoi tenir un an dans la plupart des foyers ; fort et rapide sur le tartre lourd. C'est la base de la plupart des détartrants universels, et bien rincé, il ne laisse rien derrière lui.</li>
+<li><strong>Acide lactique</strong> — plus doux et quasi inodore, présent dans les bouteilles de marque livrées avec les machines. Plus tendre avec les joints et les surfaces chromées, en échange d'un temps de contact un peu plus long pour dissoudre le même tartre.</li>
+</ul>
+<p>L'un ou l'autre fonctionne dès lors qu'il passe par le programme de détartrage de la machine elle-même. Ce qui compte, c'est de mener le cycle au bout : les compteurs de rappel ne valident qu'un cycle complet lancé depuis le menu détartrage, buse installée et phase de rinçage incluse. Arrêtez en route ou improvisez au pichet, et <a href="https://fr.codefixcoffee.com/delonghi/magnifica-dinamica/descale-light-stays-on-after-descaling/">le voyant reste allumé</a>.</p>
+<h2>À quelle fréquence — tout dépend de votre eau</h2>
+<p>Les rappels des machines se calent sur des volumes — tasses servies, litres pompés — jamais sur la dureté de l'eau : en région calcaire, il faut détarter avant que le voyant ne s'allume. Une règle pratique :</p>
+<ul>
+<li><strong>Eau douce</strong> (moins d'environ 7 °dH, soit 125 ppm) : le rappel de la machine suffit, en pratique tous les 3 à 6 mois.</li>
+<li><strong>Moyennement dure</strong> (7 à 14 °dH) : tous les 2 à 3 mois.</li>
+<li><strong>Dure</strong> (plus de 14 °dH) : environ tous les mois, et plus tôt si le débit ralentit ou si la pompe devient bruyante.</li>
+</ul>
+<p>Un étui de bandelettes de dureté coûte 5 à 10 €, et votre distributeur d'eau publie la valeur de votre commune. Les signes tardifs concordent d'une marque à l'autre : cafés maigres et lents, pompe sonore, boisson moins chaude — puis les codes cités plus haut. Détartrez au calendrier et la plupart de ces codes n'arriveront jamais ; une bouteille à 10 € reste la réparation la moins chère que ce site recommandera.</p>
+<h3>Dureté de l'eau — repères France, Suisse et Belgique</h3>
+<p>La France mesure la dureté en degrés français (°f), avec la conversion 1 °dH ≈ 1,78 °f : le Bassin parisien dépasse souvent 25 °f, soit environ 14 °dH, d'où l'intérêt d'un détartrage proche du mensuel pour les machines à espresso. En Suisse romande, l'eau du Lac Léman est douce et descend sous 5 °dH, tandis que les régions calcaires du Jura donnent des eaux nettement plus dures. En Belgique, tout dépend du sous-sol : douce en Ardennes, l'eau devient très dure en Hainaut et autour de Liège, sur les roches calcaires.</p>
+</main>
+<footer>Guides de réparation et explications des codes d’erreur de codefixcoffee.com.</footer>
+</body></html>
